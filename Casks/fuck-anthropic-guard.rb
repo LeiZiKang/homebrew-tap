@@ -1,5 +1,5 @@
 cask "fuck-anthropic-guard" do
-  version "0.4.4-beta.1"
+  version "0.4.4"
   sha256 "2e2e00db1c591100a22bb3a716cd070cc493b110bd89b6900207abb869c9049d"
 
   url "https://github.com/LeiZiKang/fuck-anthropic-guard/releases/download/v#{version}/fuck-anthropic-guard-#{version}.zip"
@@ -13,7 +13,7 @@ cask "fuck-anthropic-guard" do
   app "fuck-anthropic guard.app"
 
   caveats <<~EOS
-    Experimental beta. Installation does not activate or verify the system filter.
+    Installation does not activate or verify the system filter.
     Configure Surge separately and approve filtering explicitly in macOS.
 
     Before upgrading, save your Claude work, keep Surge running, back up Guard
