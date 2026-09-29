@@ -2,7 +2,7 @@
 
 Homebrew Casks for macOS apps maintained by LeiZiKang.
 
-## Guard (current beta)
+## Guard
 
 ```bash
 brew install --cask leizikang/tap/fuck-anthropic-guard
@@ -15,9 +15,9 @@ brew update
 brew upgrade --cask leizikang/tap/fuck-anthropic-guard
 ```
 
-The current cask is **0.4.4-beta.1 / build 13.0**, a Developer ID-signed,
+The current cask is **0.4.4 / build 13.0**, a Developer ID-signed,
 Apple-notarized Universal 2 app for macOS 14 or later. Homebrew checks the exact
-SHA-256 of the published ZIP. [Release and download](https://github.com/LeiZiKang/fuck-anthropic-guard/releases/tag/v0.4.4-beta.1).
+SHA-256 of the published ZIP. [Release and download](https://github.com/LeiZiKang/fuck-anthropic-guard/releases/tag/v0.4.4).
 
 Before upgrading, save your Claude work, keep Surge running, back up the existing
 app and choose **Keep blocking and quit** in Guard. Reopen it after the upgrade, resume checks and approve the replacement
