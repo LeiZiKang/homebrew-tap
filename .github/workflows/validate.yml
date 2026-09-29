@@ -15,9 +15,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Check Ruby syntax
-        run: ruby -c Casks/claude-connection-watcher.rb
+        run: for cask in Casks/*.rb; do ruby -c "$cask" || exit 1; done
       - name: Check Homebrew style
         env:
           HOMEBREW_NO_AUTO_UPDATE: "1"
           HOMEBREW_NO_ANALYTICS: "1"
-        run: brew style Casks/claude-connection-watcher.rb
+        run: brew style Casks/*.rb

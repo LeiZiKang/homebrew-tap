@@ -2,7 +2,39 @@
 
 Homebrew Casks for macOS apps maintained by LeiZiKang.
 
-## Claude Connection Watcher
+## Guard (current beta)
+
+```bash
+brew install --cask leizikang/tap/fuck-anthropic-guard
+```
+
+Existing installations:
+
+```bash
+brew update
+brew upgrade --cask leizikang/tap/fuck-anthropic-guard
+```
+
+The current cask is **0.4.4-beta.1 / build 13.0**, a Developer ID-signed,
+Apple-notarized Universal 2 app for macOS 14 or later. Homebrew checks the exact
+SHA-256 of the published ZIP. [Release and download](https://github.com/LeiZiKang/fuck-anthropic-guard/releases/tag/v0.4.4-beta.1).
+
+Before upgrading, save your Claude work, keep Surge running, back up the existing
+app and choose **Keep blocking and quit** in Guard. Reopen it after the upgrade, resume checks and approve the replacement
+extension in macOS if prompted. Confirm that protection is ready. Recognized
+Claude connections may be blocked while verification resumes.
+
+Installing the cask does not enable the filter or configure Surge. Guard checks
+and restricts recognized Claude clients using a separately configured Surge;
+it is not a VPN and does not guarantee account safety or coverage of all traffic.
+[Source and coverage limits](https://github.com/LeiZiKang/fuck-anthropic-guard).
+
+Before uninstalling, disable protection inside Guard, verify that it is disabled,
+and quit. Removing the app alone does not reliably remove its system extension.
+The cask preserves preferences and does not change proxy, DNS or routing settings.
+The legacy Watcher uses the same bundle identifiers: do not run both together.
+
+## Claude Connection Watcher (legacy)
 
 ```bash
 brew install --cask leizikang/tap/claude-connection-watcher
